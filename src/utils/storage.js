@@ -16,11 +16,3 @@ export const loadFromLocalStorage = () => {
     return null;
   }
 };
-
-export const clearLocalStorage = () => {
-  try {
-    localStorage.removeItem(STORAGE_KEY);
-  } catch (e) {
-    console.warn('No se pudo limpiar LocalStorage');
-  }
-};
